@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, CBLUITableDelegate, UITextFieldDelegate, UIAlertViewDelegate {
+class ViewController: UITableViewController, CBLUITableDelegate, UITextFieldDelegate, UIAlertViewDelegate {
     
     // These are not created until sometime after initialization, therefore they must be Optionals
     var database: CBLDatabase?
@@ -18,16 +18,16 @@ class ViewController: UIViewController, CBLUITableDelegate, UITextFieldDelegate,
     var syncError: NSError?
     
     // Ordinary outlets added with IB
-    @IBOutlet var addItemBackground: UIImageView
-    @IBOutlet var addItemTextField: UITextField
-    @IBOutlet var tableView: UITableView
+    @IBOutlet weak var addItemBackground: UIImageView!
+    @IBOutlet weak var addItemTextField: UITextField!
+   // @IBOutlet weak var tableView: UITableView!
     
     // It thinks there is already a 'navigationItem' but it is not reachable, so do this:
-    @IBOutlet var navItem: UINavigationItem
+    @IBOutlet weak var navItem: UINavigationItem!
     
     // This object is instantiated in the storyboard
     // If you use IB to add this outlet, it wants to default to 'strong' but you don't want that
-    @IBOutlet var dataSource: CBLUITableSource
+    @IBOutlet var dataSource: CBLUITableSource!
     
     
     // These UI elements are created programmatically as appropriate, not in the storyboard
@@ -117,13 +117,13 @@ class ViewController: UIViewController, CBLUITableDelegate, UITextFieldDelegate,
     
     // UITableViewDelegate via CBLUITableDelegate
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> Float {
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 50.0
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         // Ask the table source for the query row and then get the document
-        let row = dataSource.rowAtIndex(indexPath.row)
+        let row = dataSource.rowAtIndex(UInt(indexPath.row))
         let doc = row.document
         // toggle the check
         var docData = doc.properties as Dictionary<String, AnyObject>
@@ -292,8 +292,14 @@ class ViewController: UIViewController, CBLUITableDelegate, UITextFieldDelegate,
     }
 
     func replicationProgress(noteCenter: NSNotificationCenter) {
-        if (pull && pull!.status.value == kCBLReplicationActive.value) ||
-            (push && push!.status.value == kCBLReplicationActive.value) {
+        // N.B. CBLReplicationStatus in CBLReplication.h needed changes
+        // for Swift compatibility:
+        //    Use NS_ENUM(NSInteger, CBLReplicationStatus) macro so Swift can import it
+        //    Explicitly assign kCBLReplicationStopped = 0 to enable ordered comparisons (as raw values)
+        // Remember Swift name-mangles C-enums, and it is more clever than you expect.
+        // Actually, this is all too much work.
+        if (pull && pull?.status == CBLReplicationStatus.Active) ||
+            (push && push?.status == CBLReplicationStatus.Active) {
                 var completed: UInt32 = pull ? pull!.completedChangesCount : 0
                 completed = push ? completed + push!.completedChangesCount : completed
                 var total: UInt32 = pull ? pull!.changesCount : 0

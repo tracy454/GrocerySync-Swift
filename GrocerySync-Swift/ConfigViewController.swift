@@ -10,9 +10,9 @@ import UIKit
 
 class ConfigViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate  {
 
-    @IBOutlet var doneNavButton: UIBarButtonItem
+    @IBOutlet weak var doneNavButton: UIBarButtonItem!
 
-    @IBOutlet var urlField: UITextField
+    @IBOutlet weak var urlField: UITextField!
     
 /*
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
