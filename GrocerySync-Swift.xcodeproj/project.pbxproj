@@ -7,11 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		565537471967B851002C7165 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565537461967B851002C7165 /* ConfigViewController.swift */; };
+		56B3FD3C196BC97700A757F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B3FD3B196BC97700A757F2 /* Main.storyboard */; };
 		56B7C458196766E8005837FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B7C457196766E8005837FF /* AppDelegate.swift */; };
 		56B7C45A196766E8005837FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B7C459196766E8005837FF /* ViewController.swift */; };
-		56B7C45D196766E8005837FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B7C45B196766E8005837FF /* Main.storyboard */; };
 		56B7C45F196766E8005837FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B7C45E196766E8005837FF /* Images.xcassets */; };
 		56B7C46B196766E8005837FF /* GrocerySync_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B7C46A196766E8005837FF /* GrocerySync_SwiftTests.swift */; };
+		56B7C4811967688A005837FF /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 56B7C4751967688A005837FF /* background.jpg */; };
+		56B7C4821967688A005837FF /* background~ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 56B7C4761967688A005837FF /* background~ipad.jpg */; };
+		56B7C4831967688A005837FF /* couchbase-mobile-icon-nameless.png in Resources */ = {isa = PBXBuildFile; fileRef = 56B7C4771967688A005837FF /* couchbase-mobile-icon-nameless.png */; };
+		56B7C4841967688A005837FF /* item_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 56B7C4781967688A005837FF /* item_background.png */; };
+		56B7C4851967688A005837FF /* item_background~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 56B7C4791967688A005837FF /* item_background~ipad.png */; };
+		56B7C4861967688A005837FF /* list_area___background_middle~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 56B7C47A1967688A005837FF /* list_area___background_middle~ipad.png */; };
+		56B7C4871967688A005837FF /* list_area___checkbox___checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 56B7C47B1967688A005837FF /* list_area___checkbox___checked.png */; };
+		56B7C4881967688A005837FF /* list_area___checkbox___unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 56B7C47C1967688A005837FF /* list_area___checkbox___unchecked.png */; };
+		56B7C4891967688A005837FF /* textfield___active.png in Resources */ = {isa = PBXBuildFile; fileRef = 56B7C47D1967688A005837FF /* textfield___active.png */; };
+		56B7C48A1967688A005837FF /* textfield___active~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 56B7C47E1967688A005837FF /* textfield___active~ipad.png */; };
+		56B7C48B1967688A005837FF /* textfield___inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 56B7C47F1967688A005837FF /* textfield___inactive.png */; };
+		56B7C48C1967688A005837FF /* textfield___inactive~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 56B7C4801967688A005837FF /* textfield___inactive~ipad.png */; };
+		56B7C48E19676D1B005837FF /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B7C48D19676D1B005837FF /* CouchbaseLite.framework */; };
+		56B7C49019676D25005837FF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B7C48F19676D25005837FF /* CFNetwork.framework */; };
+		56B7C49219676D2F005837FF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B7C49119676D2F005837FF /* Security.framework */; };
+		56B7C49419676D37005837FF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B7C49319676D37005837FF /* SystemConfiguration.framework */; };
+		56B7C49619676D45005837FF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B7C49519676D45005837FF /* libsqlite3.dylib */; };
+		56B7C49819676D4E005837FF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B7C49719676D4E005837FF /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,15 +44,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		565537461967B851002C7165 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		56B3FD3B196BC97700A757F2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		56B7C452196766E8005837FF /* GrocerySync-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GrocerySync-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B7C456196766E8005837FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56B7C457196766E8005837FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56B7C459196766E8005837FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		56B7C45C196766E8005837FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56B7C45E196766E8005837FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		56B7C464196766E8005837FF /* GrocerySync-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GrocerySync-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B7C469196766E8005837FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56B7C46A196766E8005837FF /* GrocerySync_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrocerySync_SwiftTests.swift; sourceTree = "<group>"; };
+		56B7C4751967688A005837FF /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		56B7C4761967688A005837FF /* background~ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background~ipad.jpg"; sourceTree = "<group>"; };
+		56B7C4771967688A005837FF /* couchbase-mobile-icon-nameless.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "couchbase-mobile-icon-nameless.png"; sourceTree = "<group>"; };
+		56B7C4781967688A005837FF /* item_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item_background.png; sourceTree = "<group>"; };
+		56B7C4791967688A005837FF /* item_background~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item_background~ipad.png"; sourceTree = "<group>"; };
+		56B7C47A1967688A005837FF /* list_area___background_middle~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_area___background_middle~ipad.png"; sourceTree = "<group>"; };
+		56B7C47B1967688A005837FF /* list_area___checkbox___checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_area___checkbox___checked.png"; sourceTree = "<group>"; };
+		56B7C47C1967688A005837FF /* list_area___checkbox___unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_area___checkbox___unchecked.png"; sourceTree = "<group>"; };
+		56B7C47D1967688A005837FF /* textfield___active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield___active.png"; sourceTree = "<group>"; };
+		56B7C47E1967688A005837FF /* textfield___active~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield___active~ipad.png"; sourceTree = "<group>"; };
+		56B7C47F1967688A005837FF /* textfield___inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield___inactive.png"; sourceTree = "<group>"; };
+		56B7C4801967688A005837FF /* textfield___inactive~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield___inactive~ipad.png"; sourceTree = "<group>"; };
+		56B7C48D19676D1B005837FF /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
+		56B7C48F19676D25005837FF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		56B7C49119676D2F005837FF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		56B7C49319676D37005837FF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		56B7C49519676D45005837FF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		56B7C49719676D4E005837FF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		56B7C49A19676D85005837FF /* GrocerySync-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GrocerySync-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +80,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56B7C49819676D4E005837FF /* libz.dylib in Frameworks */,
+				56B7C49619676D45005837FF /* libsqlite3.dylib in Frameworks */,
+				56B7C49419676D37005837FF /* SystemConfiguration.framework in Frameworks */,
+				56B7C49219676D2F005837FF /* Security.framework in Frameworks */,
+				56B7C49019676D25005837FF /* CFNetwork.framework in Frameworks */,
+				56B7C48E19676D1B005837FF /* CouchbaseLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +102,7 @@
 		56B7C449196766E8005837FF = {
 			isa = PBXGroup;
 			children = (
+				56B7C49919676D5C005837FF /* Frameworks */,
 				56B7C454196766E8005837FF /* GrocerySync-Swift */,
 				56B7C467196766E8005837FF /* GrocerySync-SwiftTests */,
 				56B7C453196766E8005837FF /* Products */,
@@ -75,11 +121,14 @@
 		56B7C454196766E8005837FF /* GrocerySync-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				56B7C4741967688A005837FF /* Elements */,
 				56B7C457196766E8005837FF /* AppDelegate.swift */,
 				56B7C459196766E8005837FF /* ViewController.swift */,
-				56B7C45B196766E8005837FF /* Main.storyboard */,
+				565537461967B851002C7165 /* ConfigViewController.swift */,
 				56B7C45E196766E8005837FF /* Images.xcassets */,
 				56B7C455196766E8005837FF /* Supporting Files */,
+				56B7C49A19676D85005837FF /* GrocerySync-Swift-Bridging-Header.h */,
+				56B3FD3B196BC97700A757F2 /* Main.storyboard */,
 			);
 			path = "GrocerySync-Swift";
 			sourceTree = "<group>";
@@ -107,6 +156,38 @@
 				56B7C469196766E8005837FF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56B7C4741967688A005837FF /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				56B7C4751967688A005837FF /* background.jpg */,
+				56B7C4761967688A005837FF /* background~ipad.jpg */,
+				56B7C4771967688A005837FF /* couchbase-mobile-icon-nameless.png */,
+				56B7C4781967688A005837FF /* item_background.png */,
+				56B7C4791967688A005837FF /* item_background~ipad.png */,
+				56B7C47A1967688A005837FF /* list_area___background_middle~ipad.png */,
+				56B7C47B1967688A005837FF /* list_area___checkbox___checked.png */,
+				56B7C47C1967688A005837FF /* list_area___checkbox___unchecked.png */,
+				56B7C47D1967688A005837FF /* textfield___active.png */,
+				56B7C47E1967688A005837FF /* textfield___active~ipad.png */,
+				56B7C47F1967688A005837FF /* textfield___inactive.png */,
+				56B7C4801967688A005837FF /* textfield___inactive~ipad.png */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		56B7C49919676D5C005837FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56B7C49719676D4E005837FF /* libz.dylib */,
+				56B7C49519676D45005837FF /* libsqlite3.dylib */,
+				56B7C49319676D37005837FF /* SystemConfiguration.framework */,
+				56B7C49119676D2F005837FF /* Security.framework */,
+				56B7C48F19676D25005837FF /* CFNetwork.framework */,
+				56B7C48D19676D1B005837FF /* CouchbaseLite.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,8 +270,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56B7C45D196766E8005837FF /* Main.storyboard in Resources */,
+				56B7C4891967688A005837FF /* textfield___active.png in Resources */,
+				56B7C4841967688A005837FF /* item_background.png in Resources */,
+				56B7C4811967688A005837FF /* background.jpg in Resources */,
+				56B7C4821967688A005837FF /* background~ipad.jpg in Resources */,
+				56B7C48C1967688A005837FF /* textfield___inactive~ipad.png in Resources */,
+				56B7C4861967688A005837FF /* list_area___background_middle~ipad.png in Resources */,
+				56B7C4831967688A005837FF /* couchbase-mobile-icon-nameless.png in Resources */,
+				56B7C48B1967688A005837FF /* textfield___inactive.png in Resources */,
 				56B7C45F196766E8005837FF /* Images.xcassets in Resources */,
+				56B7C48A1967688A005837FF /* textfield___active~ipad.png in Resources */,
+				56B3FD3C196BC97700A757F2 /* Main.storyboard in Resources */,
+				56B7C4851967688A005837FF /* item_background~ipad.png in Resources */,
+				56B7C4881967688A005837FF /* list_area___checkbox___unchecked.png in Resources */,
+				56B7C4871967688A005837FF /* list_area___checkbox___checked.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +303,7 @@
 			files = (
 				56B7C45A196766E8005837FF /* ViewController.swift in Sources */,
 				56B7C458196766E8005837FF /* AppDelegate.swift in Sources */,
+				565537471967B851002C7165 /* ConfigViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,17 +324,6 @@
 			targetProxy = 56B7C465196766E8005837FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		56B7C45B196766E8005837FF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56B7C45C196766E8005837FF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		56B7C46C196766E8005837FF /* Debug */ = {
@@ -280,6 +363,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,6 +400,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				METAL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -327,9 +412,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "GrocerySync-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GrocerySync-Swift/GrocerySync-Swift-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -338,9 +428,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "GrocerySync-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GrocerySync-Swift/GrocerySync-Swift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -399,6 +494,7 @@
 				56B7C470196766E8005837FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56B7C471196766E8005837FF /* Build configuration list for PBXNativeTarget "GrocerySync-SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +503,7 @@
 				56B7C473196766E8005837FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

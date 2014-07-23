@@ -1,0 +1,36 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11860\viewh13740\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs30 \cf0 Installing icon files in an app using Xcode 5+ and Image Assets:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b0\fs28 \cf0 \
+Open your iOS app project in Xcode 5 or later.\
+Make sure the Project Navigator is visible in the left sidebar.\
+\
+Select "Images.xcassets" in the Project Navigator.\
+\
+If the project was created using an easier version of Xcode, this may not appear.\
+To create it, select the project at the top of the Project Navigator.\
+Use the popup menu to make sure you are editing the target and go to the General tab.\
+In the "App Icons" section, click the "Use Asset Catalog" button.\
+The "Images.xcassets" folder will be created and any existing icons will be migrated to the new structure.\
+\
+In "Images.xcassets", select "AppIcon" which will show you a series of image wells listing the icons needed for the project and its supported devices.\
+\
+Drag the files starting with "icon_" into these image wells.\
+You should be able to drag them all at once, but in the early versions of Xcode 5, I have found that this does not always allocate them correctly.\
+So you can either drag them all in and then re-allocate them, or drag them in individually which allows you to confirm that each icon is allocated to the correct purpose.\
+The file names indicate which icons fit into which section. Some icons may be used more than once in universal apps.\
+Xcode will show a warning if the icons are placed incorrectly.\
+Depending on the versions of iOS that your app supports, you may not need all of these icons - just fill all the available image wells.\
+\
+If you are distributing the app through the iTunes App Store, then you will need to upload the "iTunesArtwork@2x.png" file as the large icon when setting up your app in iTunes Connect. You can drag this file into "Images.xcassets" for storage with the project.\
+\
+If you are using AdHoc or Enterprise distribution through iTunes, you will also need to include the "iTunesArtwork" file. This has no file extension although it is really a png. Drag this file into your Xcode project - NOT into  "Images.xcassets", making sure that the app is checked in the "Add to targets" section.\
+\
+Once all the icons have been dragged into place and the iTunesArtwork file has been stored, you can delete this folder and all the files in it.\
+}

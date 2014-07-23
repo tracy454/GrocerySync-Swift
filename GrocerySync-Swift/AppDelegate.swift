@@ -8,14 +8,32 @@
 
 import UIKit
 
+let kDatabaseName: String? = "grocery-sync"
+let kDefaultSyncDbURL: NSURL?      // define this to provide a default URL for database sync
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UIAlertViewDelegate {
                             
     var window: UIWindow?
-
+    
+    var database: CBLDatabase?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         // Override point for customization after application launch.
+        // CBL setup
+        #if kDefaultSyncDbURL
+            let defaults = NSUserDefaults.standardUserDefaults()
+            let appDefaults = ["syncpoint" : kDefaultSyncDbURL]
+            defaults.registerDefaults(appDefaults)
+            defaults.synchronize()
+        #endif
+        
+        var error: NSError?
+        database = CBLManager.sharedInstance().databaseNamed(kDatabaseName, error: &error)
+        if !database {
+            showAlert("Unable to make a database", error: error, fatal: true)
+        }
+        
         return true
     }
 
@@ -41,6 +59,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    // Display an error alert. if "Fatal" the app quits when this is dismissed.
+    func showAlert(message: String, error: NSError?, fatal: Bool) {
+        let titl = (fatal ? "Fatal error" : "Error")
+        let msg = (error ? "\(message)\n\n\(error!.localizedDescription)" : message)
+        let dele: UIAlertViewDelegate? = (fatal ? self : nil)
+        let cancelTitle: String? = (fatal ? "Quit" : "OK")
+        let alert = UIAlertView(title: titl,
+            message: msg,
+            delegate: dele,
+            cancelButtonTitle: cancelTitle)
 
+        alert.show()
+    }
+    
+    func alertView(alertView: UIAlertView, didDismissWithButtonIndex: Int) {
+        exit(0)
+    }
 }
 
